@@ -1,7 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"/>
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <RadioGroup
+        android:id="@+id/radio_group_first_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/first_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Which one is the default access modifier?"
+            android:textSize="20dp"/>
+
+        <RadioButton
+            android:id="@+id/answer_1_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Private"/>
+        <RadioButton
+            android:id="@+id/answer_2_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Public"/>
+        <RadioButton
+            android:id="@+id/answer_3_radio_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Default"/>
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radio_group_second_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/second_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Which one is the default access modifier?"
+            android:textSize="20dp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="1. Prodcedural programming"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="2. Objected-oriented programing"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3. Both of 1 and 2"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"/>
+
+    <Button
+        android:padding="20dp"
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"/>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:padding="20dp"
+        android:id="@+id/btn_reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:text="Reset"/>
+
+
+</LinearLayout>
